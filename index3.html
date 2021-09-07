@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title class="text-capitalize">My School Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    </head>
+    <body>
+   <h2>Achivement Pages</h2>
+        
+        <button type="button" class="colapsible">Won The First Inter Basketball Compitition</button>
+        <div class="content" display="none">
+        <image src="https://www.nba.com/resources/static/team/v2/timberwolves/media/mntw-academic-achievement-191017.png" class="img-responsive img-thumbnail" width="350" height="300"></image>
+            <p>We promote physical excellence in our students through motivation and constant training. Village School fields have the necessary requirements for the optimal development of their skills in football, basketball, track and field, volleyball and baseball.</p>
+        </div>
+        <p></p>
+          <button type="button" class="colapsible">AASCA Leadership and Service Experience</button>
+          <div class="content">
+       <image src="https://village.edu.gt/wp-content/uploads/2019/06/51464813_1025192424339284_3378638673393221632_n-768x512.jpg" class="img-responsive img-thumbnail" width="350" height="300"></image>
+            <p>During February, we had the honor of hosting the AASCA Leadership and Service Experience,  where 16 delegations of Central America participated. The event was full of excitement and students found themselves learning about different leadership styles, innovation, and entrepreneurship creating, as an end result, their own proposal for the participating NGOs.</p>
+        </div>
+        <p></p>
+         <button type="button" class="colapsible">Village is going to England!</button>
+          <div class="content">
+       <image src="https://village.edu.gt/wp-content/uploads/2019/04/wee-768x576.jpg" width="350" height="300"></image>
+            <p>World English Experience (WEE) is an English program organized by Oxford International Education Group (OIEG). During two weeks, our students will have English lessons instructed by qualified EFL teachers. Also, they will participate in aseries of educational events and competitions whilst being exposed to British history and culture.</p>
+        </div>
+
+<script>
+var coll = document.getElementsByClassName("colapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+    </body>
+</html>
